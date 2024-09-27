@@ -6,5 +6,15 @@ In this project, titled Nepali Lyrics Clustering, I aim to group various Nepali 
 
 ![Cover Image](images/cover_image.png)
 
+# Data Collection And Preprocessing
+
+For the dataset we have acquired lyrics from different nepali artists that spans multiple genre and artists. We used API from Genius to collect the music and lyrics, and compiled them to a csv files. The lyrics extracted had two problems: 
+- Extra Information within the lyrics such as the name of the contributor,  information about the structure of music such as verse, intro, outro, bridge and so on.
+- Some of the lyrics were in romanized form. Since the task was to analyse Nepali words, the romanized version was not suitable for the data.
+
+I cleaned the data with the help of regular expression, string operation and pandas to work on all the lyrics. For romanized lyrics, I manually replaced them with nepali version or drop them if Nepali version was not found. However, english word and songs were kept in the database.
+Similarly, stop words were identified and removed in this process.
+
+![Cleaning Process](images/DataCleaning.png)
 
 
