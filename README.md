@@ -17,4 +17,12 @@ Similarly, stop words were identified and removed in this process.
 
 ![Cleaning Process](images/DataCleaning.png)
 
+# Data Representation and Embedding
+
+Computers do not understand languages in the same way humans do; they require numerical representations to process text. To achieve this, I have employed Word2Vec, a powerful technique for transforming words into vectors of numbers. In this method, each word in the vocabulary is represented by a 50-dimensional vector, which captures the semantic relationships between words based on the contexts in which they appear.
+
+To represent entire song lyrics, which consist of multiple words, I have used an average embedding technique. This approach calculates the average of all the word vectors within a song's lyrics, creating a single vector that represents the overall meaning or theme of the song. This combined vector serves as the foundation for clustering the artists based on their lyrical content, allowing us to compare and group artists who use similar themes and language patterns.
+
+
+
 
